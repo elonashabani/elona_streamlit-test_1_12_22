@@ -15,11 +15,10 @@ header=st.text_input('the text:',st.text)
 def convert_list(text):
     lst = list(text.split())
     return lst
-prnt = convert_list(st.text)
 if st.button('Return list'):
+    prnt = convert_list(st.text)
     st.write(prnt)
-else:
-    st.write('Try again')
+
     
 # Declare another function called “convert_upper” that takes the list from the function called “convert_list” and converts them to a list with all upper case.(hint: you need to use for loop, .upper() and .append() methods ). Connect this function to a button called “upper” that activates this function and prints te result.(hint: you need to use st.write()
 
@@ -28,11 +27,10 @@ def convert_upper():
     for i in convert_list(st.text):
         upper_list.append(i.upper())
     return upper_list
-prnt_upper = convert_upper()
 if st.button('Upper'):
+    prnt_upper = convert_upper()
     st.write(prnt_upper)
-else:
-    st.write('Try again')
+
     
    
    
@@ -44,10 +42,9 @@ def count():
     for i in convert_list(st.text):
         counter +=1
     return counter
-prnt_count = count()
 if st.button('print_count'):
+    prnt_count = count()
     st.write(prnt_count)
-else:
-    st.write('Try again')
+
     
     
